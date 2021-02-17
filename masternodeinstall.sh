@@ -92,7 +92,6 @@ fi
  echo "Enter masternode private key"
  read PRIVKEY
  
- mkdir -p $CONF_DIR
   echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> mnpostree.conf_TEMP
   echo "rpcpassword=pass"`shuf -i 100000-10000000 -n 1` >> mnpostree.conf_TEMP
   echo "rpcallowip=127.0.0.1" >> mnpostree.conf_TEMP
@@ -111,7 +110,8 @@ fi
   echo "externalip=$IP:$PORT" >> mnpostree.conf_TEMP
   echo "masternodeaddr=$IP:$PORT" >> mnpostree.conf_TEMP
   echo "masternodeprivkey=$PRIVKEY" >> mnpostree.conf_TEMP
-  mv mnpostree.conf_TEMP $CONF_DIR/mnpostree.conf
+  mv mnpostree.conf_TEMP mnpostree.conf
+  cd
   echo ""
   echo -e "Your ip is ${GREEN}$IP:$PORT${NC}"
 
