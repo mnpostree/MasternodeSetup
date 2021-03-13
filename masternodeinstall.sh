@@ -58,7 +58,7 @@ then
   sudo apt-get -y upgrade
   sudo apt-get -y dist-upgrade
   sudo apt-get update
-  sudo apt-get install build-essential zip unzip libtool autotools-dev autoconf pkg-config libssl-dev libboost-all-dev libminiupnpc-dev software-properties-common -y && add-apt-repository ppa:bitcoin/bitcoin -y && apt-get update -y && apt-get install libdb4.8-dev libdb4.8++-dev libminiupnpc-dev libzmq3-dev bc curl nano libevent-pthreads-2.0-5 -y
+  sudo apt-get update && apt-get dist-upgrade -y && apt install nano htop -y && apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev -y && apt-get install libboost-all-dev git libminiupnpc-dev -y && apt-get install software-properties-common -y && apt install -y make build-essential libtool software-properties-common autoconf libssl-dev libboost-dev libboost-chrono-dev libboost-filesystem-dev libboost-program-options-dev libboost-system-dev libboost-test-dev libboost-thread-dev sudo automake git curl bsdmainutils libminiupnpc-dev libgmp3-dev pkg-config libevent-dev unzip && sudo add-apt-repository ppa:bitcoin/bitcoin -y && sudo apt-get update -y && sudo apt-get install libdb4.8-dev libdb4.8++-dev -y && sudo apt-get install make automake cmake curl g++-multilib libtool binutils-gold bsdmainutils pkg-config python3 -y && sudo apt-get install curl librsvg2-bin libtiff-tools bsdmainutils cmake imagemagick libcap-dev libz-dev libbz2-dev python-setuptools -y && apt-get install libzmq3-dev -y && apt-get install libdb5.3++-dev iotop -y && sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y && sudo apt-get update -y && sudo apt-get upgrade libstdc++6 -y && sudo apt-get install gcc-4.9 -y
 
   cd /var
   sudo touch swap.img
