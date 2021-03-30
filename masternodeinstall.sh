@@ -123,7 +123,7 @@ echo "Commands:"
 echo -e "Start MNPoSTree Service: ${GREEN}systemctl start mnpostree${NC}"
 echo -e "Check MNPoSTree Status Service: ${GREEN}systemctl status mnpostree${NC}"
 echo -e "Stop MNPoSTree Service: ${GREEN}systemctl stop mnpostree${NC}"
-echo -e "Check Masternode Status: ${GREEN}mnpostree-cli masternode status${NC}"
+echo -e "Check Masternode Status: ${GREEN}mnpostree-cli getmasternodestatus${NC}"
 
 echo ""
 echo -e "${GREEN}MNPoSTree Masternode Installation Done${NC}"
