@@ -9,10 +9,10 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m'
 if [[ $(lsb_release -d) = *16.04* ]]; then
-  COINZIP='https://github.com/mnpostree/mptcoin/releases/download/v1.0/MPTC_v1.0_ubuntu16.zip'
+  COINZIP='https://github.com/mnpostree/mptcoin/releases/download/v1.2/MPTC_v1.2.0.0_ubuntu16.zip'
 fi
 if [[ $(lsb_release -d) = *18.04* ]]; then
-  COINZIP='https://github.com/mnpostree/mptcoin/releases/download/v1.0/MPTC_v1.0_ubuntu18.zip'
+  COINZIP='https://github.com/mnpostree/mptcoin/releases/download/v1.2/MPTC_v1.2.0.0_ubuntu18.zip'
 fi
 if [[ $EUID -ne 0 ]]; then
    echo -e "${RED}$0 must be run as root.${NC}"
