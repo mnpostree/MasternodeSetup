@@ -78,9 +78,9 @@ then
   
   mkdir -p $CONF_DIR
   cd $CONF_DIR
-  wget https://mnpostree.com/downloads/bootstrap.zip
-  unzip bootstrap.zip
-  rm bootstrap.zip
+  wget http://cdn.delion.xyz/mptc.zip
+  unzip mptc.zip
+  rm mptc.zip
 
 fi
 
@@ -99,7 +99,6 @@ fi
   echo "listen=1" >> mnpostree.conf_TEMP
   echo "server=1" >> mnpostree.conf_TEMP
   echo "daemon=1" >> mnpostree.conf_TEMP
-  echo "logtimestamps=1" >> mnpostree.conf_TEMP
   echo "maxconnections=250" >> mnpostree.conf_TEMP
   echo "masternode=1" >> mnpostree.conf_TEMP
   echo "dbcache=20" >> mnpostree.conf_TEMP
